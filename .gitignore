@@ -1,0 +1,115 @@
+# ============================================================
+# .gitignore for Project Elena
+# Self-hosted AI Assistant | Ubuntu | Python custom stack
+# ============================================================
+
+
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+
+# ── Virtual Environments ────────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+
+
+# ── Environment & Secrets ───────────────────────────────────
+.env
+.env.*
+*.env
+secrets.yaml
+secrets.json
+config.local.*
+credentials/
+
+
+# ── AI / Model Assets ───────────────────────────────────────
+models/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+checkpoints/
+lora_weights/
+fine_tuned/
+
+
+# ── MCP & Integration State ─────────────────────────────────
+mcp_state/
+mcp_cache/
+*.mcp_session
+tool_cache/
+
+
+# ── Obsidian Vault (tracked separately) ─────────────────────
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/plugins/
+.trash/
+*.canvas
+
+
+# ── Logs & Debug Output ─────────────────────────────────────
+logs/
+*.log
+*.log.*
+debug/
+trace/
+
+
+# ── Local Databases & Memory Stores ─────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+chroma_db/
+vector_store/
+memory_store/
+
+
+# ── Jupyter (prototyping/testing) ───────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+
+# ── Ubuntu / Linux ──────────────────────────────────────────
+*~
+.nfs*
+core
+*.core
+.sudo_as_admin_successful
+snap/
+
+
+# ── OS Junk ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+
+# ── IDE / Editor ────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+
+# ── Temporary & Test Artifacts ──────────────────────────────
+tmp/
+temp/
+scratch/
+.pytest_cache/
+.coverage
+htmlcov/
